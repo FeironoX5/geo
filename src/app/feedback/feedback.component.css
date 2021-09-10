@@ -1,0 +1,28 @@
+textarea, input {
+  background: #F8F8F8;
+  color: black;
+  font-weight: 600;
+  padding: 20px;
+  width: calc(100% - 40px);
+  border: none;
+  min-height: 40vh;
+  resize: vertical;
+}
+input {
+  resize: none;
+  min-height: auto;
+  margin-bottom: 10px;
+
+}
+button {
+  float: right;
+  margin-top: 10px;
+  display: block;
+}
+@media (max-width: 1000px) {
+
+
+  button {
+    width: 100%;
+  }
+}

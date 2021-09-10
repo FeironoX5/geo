@@ -1,0 +1,7 @@
+.news_card {
+  width: 80px;
+  text-align: center;
+}
+.news_card span {
+  width: 100%;
+}

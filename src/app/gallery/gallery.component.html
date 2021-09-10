@@ -1,0 +1,21 @@
+<div class="con" >
+<h1 >Галерея</h1>
+  <div>
+    <div (click)="oititle = card.title; oimages = card.images; oi = true;" class="news_card" *ngFor="let card of gallery">
+      <img style="object-fit: cover!important; width: 100%; height: 300px;top: 0;left: 0; position: absolute" [src]="card.images[0]">
+      <span style="margin-top: 300px; height: calc(3em + 10px); line-height: 1em">{{card.title}}</span>
+    </div>
+
+  </div>
+</div>
+<div style="cursor: pointer; position: fixed; z-index: 9999999; top: 0; bottom: 0; left: 0; right: 0; background: rgba(0,0,0, 0.1); backdrop-filter: blur(5px);" *ngIf="oi" (click)="oi = false">
+  <svg style="position: fixed; right: 15px; top: 15px; width: 15px;" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+       viewBox="0 0 22.88 22.88" xml:space="preserve">
+<path style="fill:#000000;" d="M0.324,1.909c-0.429-0.429-0.429-1.143,0-1.587c0.444-0.429,1.143-0.429,1.587,0l9.523,9.539
+	l9.539-9.539c0.429-0.429,1.143-0.429,1.571,0c0.444,0.444,0.444,1.159,0,1.587l-9.523,9.524l9.523,9.539
+	c0.444,0.429,0.444,1.143,0,1.587c-0.429,0.429-1.143,0.429-1.571,0l-9.539-9.539l-9.523,9.539c-0.444,0.429-1.143,0.429-1.587,0
+	c-0.429-0.444-0.429-1.159,0-1.587l9.523-9.539L0.324,1.909z"/>
+  </svg>
+</div>
+
+<app-gallery-popup *ngIf="oi" [title]="oititle" [images]="oimages"></app-gallery-popup>

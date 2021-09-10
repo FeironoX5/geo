@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "rosgeo-2172c": {
+      "hosting": {
+        "geo1": [
+          "rosgeo-2172c"
+        ]
+      }
+    }
+  }
+}

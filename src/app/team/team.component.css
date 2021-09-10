@@ -1,0 +1,26 @@
+.emp_card {
+  width: 24vw;
+  display: inline-block;
+  margin: 20px 0;
+  margin-right: 60px;
+  vertical-align: top;
+  cursor: pointer;
+}
+.emp_card img {
+  object-fit: cover; object-position: top; width: 24vw; height: 24vw; border-radius: 50%;
+}
+
+.emp_c {
+  text-align: center; width: 100%;
+}
+.emp_card h3, .emp_card span {
+  display: block;
+  width: 100%;
+}
+.emp_card h3 {
+  margin: 10px 0;
+}
+.emp_card span {
+  cursor: pointer;
+  margin: 3px 0;
+}

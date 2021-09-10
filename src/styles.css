@@ -1,1 +1,323 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+* {
+  font-family: 'Montserrat', sans-serif;
+  outline: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#logo {
+  margin-top: 34px;
+  margin-left: 28px;
+  cursor: pointer;
+}
+
+#search {
+  border-radius: 50px;
+  width: 20vw;
+  margin-right: 40px;
+  float: right;
+  background: rgba(255, 255, 255, 0.5);
+  margin-top: 27px;
+  border: none;
+  height: 50px;
+}
+
+#header {
+  position: fixed;
+  z-index: 99999;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100px;
+}
+
+#waves {
+  position: absolute;
+  z-index: -1;
+  right: 0;
+  top: -100px;
+}
+
+#title {
+  position: absolute;
+  top: calc(50vh - (3vw + 18px)*3);
+  left: 106px;
+  font-size: calc(3.5vw + 8px);
+  line-height: calc(3vw + 10px);
+  font-weight: 700;
+  width: 70vw;
+}
+
+button {
+  background: #F8F8F8;
+  color: black;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 149px;
+  height: 46.51px;
+
+  border: none;
+
+}
+
+#join {
+  position: fixed;
+  right: 34px;
+  bottom: 28px;
+  z-index: 999999;
+  background: #001AFF;
+  color: white;
+}
+
+
+#b_news {
+  margin-top: calc(100vh + 20px);
+  margin-left: 110px;
+}
+
+.sct {
+  margin-top: 100px;
+  margin-left: 110px;
+}
+
+h2 {
+  font-weight: 800;
+  cursor: pointer;
+  margin: 0 0 5px;
+  font-size: 30px;
+  text-decoration-line: underline;
+}
+
+.news_card {
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  margin-top: 15px;
+  margin-right: 25px;
+  background: #F8F8F8;
+  padding: 20px;
+  width: calc(50% - 115px);
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.news_card:hover {
+  background: #f3f3f3;
+}
+
+.image_card {
+  margin-top: 15px;
+  display: inline-block;
+  margin-right: 25px;
+  width: calc(25% - 50px);
+  cursor: pointer;
+  vertical-align: top;
+}
+
+.image_card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.image_card.member {
+  width: calc(100% / 3 - 50px);
+}
+
+.image_card.member h3 {
+  margin: 0;
+  display: block;
+  margin-top: 15px;
+  font-family: Montserrat, sans-serif;
+}
+
+.image_card.member img {
+  height: 400px;
+}
+.con {
+  margin-left: 110px;
+  margin-top: 140px;
+}
+.image_card span {
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  display: block;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.news_card span {
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22.7023px;
+  line-height: 31px;
+  width: 80%;
+  display: block;
+}
+
+.blob {
+  display: inline-block;
+  vertical-align: top;
+}
+
+p {
+  margin: 0;
+  width: calc(100% - 350px);
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15.7845px;
+  line-height: 21px;
+}
+
+.space {
+  width: 100%;
+  height: 20vh;
+}
+
+.footer {
+  width: calc(100% - 2px);
+  border: 1px solid #F8F8F8;
+  background: #F8F8F8;
+  z-index: -1;
+}
+
+
+
+.footer .links {
+  font-weight: 600;
+  margin-left: 110px;
+  display: inline-block;
+  margin-top: 40px;
+  vertical-align: top;
+}
+
+.links span {
+  display: block;
+  margin: 10px 0;
+  height: 100% !important;
+  width: 100% !important;
+  color: black;
+  cursor: pointer !important;
+}
+
+.footer a {
+  text-decoration: none !important;
+}
+.x {
+  width: 500px; margin-left: 110px;
+}
+@media (max-width: 1000px) {
+  #logo {
+    display: none !important;
+  }
+  #waves {
+    display: none;
+  }
+  #title {
+    font-size: 5vw!important;
+    font-weight: 700;
+    position: static !important;
+    margin: 50px 30px;
+    width: 85vw;
+  }
+
+  #b_news {
+    margin-left: 50px;
+    margin-top: 50px;
+  }
+
+  #b_news div {
+    display: none;
+  }
+
+  #b_gallery {
+    margin-left: 50px;
+    margin-top: 50px;
+  }
+
+  #b_gallery div {
+    display: none;
+  }
+
+  #b_about {
+    margin-left: 50px;
+    margin-top: 50px;
+  }
+  #b_about p {
+    width: 80vw;
+    margin-bottom: 20px;
+  }
+  #b_members {
+    margin-left: 50px;
+    margin-top: 50px;
+  }
+  .con .news_card p {
+    display: none;
+  }
+  .con {
+    margin-left: 50px;
+    margin-top: 50px;
+  }
+}
+@media (max-width: 700px) {
+  .image_card, .news_card {
+    display: block!important;
+    width: calc(100% - 50px)!important;
+    background: none!important;
+    padding: 20px 0;
+  }
+  .footer .links {
+    margin-left: 40px;
+  }
+  .x {
+    width: calc(100% - 100px); margin-left: 40px;
+  }
+  #join {
+    font-size: 10px;
+    width: 120px;
+    height: 40px;
+
+    border: none;
+  }
+  .news_card span {
+    font-size: 18px;
+  }
+  .con {
+    margin-top: 40px;
+    margin-left: 20px;
+  }
+  .con h1 {
+    width: 80%;
+  }
+  .imd {
+    width: calc(100% - 20px) !important;
+  }
+  .emp_card {
+    width: calc(50% - 40px)!important;
+    margin: 0 20px 0 0!important;
+  }
+  .emp_card img {
+    width: calc((100vw - 20px)/2 - 40px) !important;
+    height: calc((100vw - 20px)/2 - 40px) !important;
+  }
+  .k {
+    width: calc(100% - 20px) !important;
+  }
+}
+a {
+  text-decoration: none;
+  color: black;
+}

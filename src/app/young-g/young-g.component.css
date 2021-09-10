@@ -1,0 +1,5 @@
+@media (max-width: 1000px) {
+  .z p {
+    width: calc(100% - 40px);
+  }
+}

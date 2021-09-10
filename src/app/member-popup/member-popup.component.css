@@ -1,0 +1,33 @@
+div {
+  position: fixed;
+  z-index: 9999999;
+  top: 10vh;
+  bottom: 10vh;
+  left: 15vw;
+  right: 15vw;
+  background: #f3f3f3;
+  padding: 30px;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+h1 {
+  font-size: 25px;
+  margin-top: 5px;
+}
+p {
+  font-size: 18px;
+  width: 90%;
+}
+@media (max-width: 700px) {
+  div {
+    padding: 20px;
+    left: 20px;
+    right: 20px;
+  }
+  div h1 {
+    font-size: 20px;
+  }
+  div p {
+    width: 100%;
+  }
+}

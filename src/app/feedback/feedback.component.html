@@ -1,0 +1,11 @@
+
+<div class="con">
+  <h1>Напишите нам</h1>
+  <div class="k" style="width: calc(90% - 50px);">
+    <input [(ngModel)]="fio" placeholder="Введите ФИО">
+    <input [(ngModel)]="em" placeholder="Введите свою почту">
+    <textarea [(ngModel)]="x" placeholder="Введите текст"></textarea>
+    <div style="width: calc(100% - 40px); padding: 20px; background: red; color: white;" *ngIf="error">{{error}}</div>
+    <button (click)="submit()">Отправить</button>
+  </div>
+</div>
