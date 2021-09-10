@@ -1,27 +1,19 @@
-# Geo1
+# Anoke Anime App
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.2.
+This app uses AniBest.Ru API (pls. support them - https://vk.com/anibest_ru). 
 
-## Development server
+### I'm going to redesign this app. Follow my social media & Figma file to know more.
+https://www.figma.com/file/bhDEw5yQ8AdHNkFEmY7z81/Untitled?node-id=346%3A619
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## About me
+I'm a russian student (14yo) learning design and IT. My skills:
+- Angular
+- VueJS
+- Python
+- C++
+- Figma
+- I guess Flutter now too :)
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Follow my social media
+👉 VK: @feironox5\
+👉 Instagram: @gleb.kiva
